@@ -1,5 +1,6 @@
 import styles from "@/src/styles/page.module.css";
 import About from "../components/about";
+import Hero from "../components/hero";
 
 export default function Main() {
   return (
@@ -10,6 +11,7 @@ export default function Main() {
         <div id="ball-three"></div>
       </div>
 
+      <Hero />
       <About />
     </main>
   );
