@@ -1,5 +1,7 @@
-"use client"
+"use client";
 
+import gsap from "gsap";
+import { MutableRefObject, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "@/src/hooks";
 import styles from "./hero.module.scss";
@@ -7,18 +9,60 @@ import styles from "./hero.module.scss";
 const Hero = () => {
   const isMobile800 = useMediaQuery(800);
   const isMobile485 = useMediaQuery(485);
+  const heroTitle = useRef() as MutableRefObject<HTMLHeadingElement>
+
+  useEffect(() => {
+    const colors = gsap.to(heroTitle.current, {
+      paused: true,
+      duration: 20,
+      repeat: -1,
+      "--hue": 360,
+    });
+
+    const doRandom = () => {
+      gsap
+        .timeline()
+        .to("p", {
+          duration: 0.1,
+          opacity: function () {
+            return gsap.utils.random(0.9, 0.95);
+          },
+          delay: function () {
+            return gsap.utils.random(0.1, 2);
+          },
+        })
+        .to("p", {
+          duration: 0.1,
+          opacity: 1,
+          onComplete: function () {
+            doRandom();
+          },
+        });
+    };
+
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (!mediaQuery || !mediaQuery.matches) {
+      colors.play();
+      doRandom();
+    }
+  }, []);
 
   return (
-    <section 
+    <section
       className={styles.hero}
+      style={{ backgroundImage: isMobile485 ? "" : `url('/img/hero-bg${isMobile800 ? '-mobile' : ""}.png')` }}
     >
       <div className="sub-container">
         <div className={styles.hero__inner}>
-          <h1 className={styles.hero__title}>Web development</h1>
-          <p className={styles.hero__description}>
-            Вы работаете над чем-то великим? Я с удовольствием помогу вам в
-            этом! Напишите мне письмо и мы начнем проект прямо сейчас!
-          </p>
+          <h1 className={styles.hero__title} ref={heroTitle}>
+            Web development
+          </h1>
+          <div className={styles.hero__description}>
+            <p>Вы работаете над чем-то великим?</p>
+            <p>Я с удовольствием помогу вам в этом!</p>
+            <p>Напишите мне письмо и мы начнем проект прямо сейчас!</p>
+          </div>
           <Link
             className={styles.hero__btn}
             to="contact"
@@ -29,18 +73,20 @@ const Hero = () => {
           >
             Связаться с разработчиком
           </Link>
-          {!isMobile800 && <Link
-            className={styles.hero__arrow}
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={30}
-            duration={500}
-          />}
+          {!isMobile800 && (
+            <Link
+              className={styles.hero__arrow}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={30}
+              duration={500}
+            />
+          )}
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Hero
+export default Hero;

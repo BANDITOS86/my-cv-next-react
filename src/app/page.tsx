@@ -4,7 +4,7 @@ import Hero from "../components/hero";
 
 export default function Main() {
   return (
-    <main className={styles.main}>
+    <main>
       <div className="background-animation">
         <div id="ball-one"></div>
         <div id="ball-two"></div>

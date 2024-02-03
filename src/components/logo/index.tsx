@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/img/logo.svg";
+import logo from "@/public/img/logo.svg";
 import styles from "../logo/logo.module.scss"
 
 const Logo = () => {
