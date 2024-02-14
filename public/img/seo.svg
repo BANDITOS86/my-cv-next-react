@@ -1,0 +1,24 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1506_4754">
+			<rect width="40.000000" height="40.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1506_4754)">
+		<rect x="3.462402" y="29.983398" rx="1.000000" width="3.505315" height="7.109567" transform="rotate(-40.3813 3.462402 29.983398)" fill="#C4C4C4" fill-opacity="0"/>
+		<rect x="3.462402" y="29.983398" rx="1.000000" width="3.505315" height="7.109567" transform="rotate(-40.3813 3.462402 29.983398)" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+		<rect x="17.907715" y="9.416748" rx="1.000000" width="3.505315" height="19.724449" transform="rotate(-40.3813 17.907715 9.416748)" fill="#C4C4C4" fill-opacity="0"/>
+		<rect x="17.907715" y="9.416748" rx="1.000000" width="3.505315" height="19.724449" transform="rotate(-40.3813 17.907715 9.416748)" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+		<path d="M6.08643 28.2778L18.4731 9.46265L30.7324 23.8767L10.1729 33.0825L6.08643 28.2778Z" fill="#C4C4C4" fill-opacity="0" fill-rule="nonzero"/>
+		<path d="M17.9004 10.3328L6.08643 28.2778L10.1729 33.0825L29.7817 24.3025L30.7324 23.8767L18.4731 9.46265L17.9004 10.3328ZM18.5752 11.1262L29.1069 23.5088L10.4487 31.8633L7.33398 28.2012L18.5752 11.1262Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<rect x="27.743164" y="13.407227" rx="0.450532" width="8.109567" height="0.901063" transform="rotate(-40.3813 27.743164 13.407227)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect x="24.217285" y="9.398926" rx="0.450532" width="8.070536" height="0.901063" transform="rotate(-52.4563 24.217285 9.398926)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect x="11.044922" y="23.684570" rx="0.450532" width="5.124088" height="0.901063" transform="rotate(-57.2535 11.044922 23.684570)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect x="14.529297" y="17.942383" rx="0.450532" width="3.922036" height="0.901063" transform="rotate(-58.2173 14.529297 17.942383)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<path d="M31.646 17.1296L38.1528 13.9023C38.3755 13.7917 38.646 13.8828 38.7563 14.1057C38.8672 14.3286 38.7759 14.5989 38.5532 14.7095L32.0464 17.9368C31.8232 18.0474 31.5527 17.9563 31.4424 17.7334C31.332 17.5105 31.4229 17.2402 31.646 17.1296Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M16.7441 29.8589L17.5708 29.5L17.8901 30.2358C18.1099 30.7424 18.6987 30.9749 19.2056 30.7551L20.3545 30.2563L21.5039 29.7576C22.0103 29.5376 22.2427 28.9487 22.0229 28.4419L21.7036 27.7063L22.5298 27.3474L22.8101 27.9924C23.25 29.0056 22.7852 30.1836 21.772 30.6235L19.6553 31.5422C18.6421 31.9819 17.4639 31.5171 17.0239 30.5039L16.7441 29.8589Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

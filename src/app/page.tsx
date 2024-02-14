@@ -1,6 +1,6 @@
-import styles from "@/src/styles/page.module.css";
 import About from "../components/About";
 import Hero from "../components/hero";
+import Skills from "../components/Skills";
 
 export default function Main() {
   return (
@@ -13,6 +13,7 @@ export default function Main() {
 
       <Hero />
       <About />
+      <Skills />
     </main>
   );
 }
