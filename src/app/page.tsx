@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Hero from "../components/hero";
+import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 
 export default function Main() {
@@ -14,6 +15,7 @@ export default function Main() {
       <Hero />
       <About />
       <Skills />
+      <Portfolio />
     </main>
   );
 }

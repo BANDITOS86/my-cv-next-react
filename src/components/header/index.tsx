@@ -47,8 +47,16 @@ const Header = () => {
             <span />
           </button>
         )}
-        <nav className={`${isMobile ? stylesMenu.menu : styles.header__nav} ${menuOpen ? stylesMenu.open : ""}`}>
-          <ul className={`${isMobile ? styles.list_reset : styles.header__nav__list}`}>
+        <nav
+          className={`${isMobile ? stylesMenu.menu : styles.header__nav} ${
+            menuOpen ? stylesMenu.open : ""
+          }`}
+        >
+          <ul
+            className={`${
+              isMobile ? styles.list_reset : styles.header__nav__list
+            }`}
+          >
             <li className={currentMenuItemClass}>
               <Link
                 className={styles.header__nav__list__item__link}
@@ -61,10 +69,10 @@ const Header = () => {
                 Обо мне
               </Link>
             </li>
-             <li className={currentMenuItemClass}>
+            <li className={currentMenuItemClass}>
               <Link
                 className={styles.header__nav__list__item__link}
-                to="about"
+                to="skills"
                 spy={spy}
                 smooth={smooth}
                 offset={offset}
@@ -73,10 +81,10 @@ const Header = () => {
                 Навыки
               </Link>
             </li>
-             <li className={currentMenuItemClass}>
+            <li className={currentMenuItemClass}>
               <Link
                 className={styles.header__nav__list__item__link}
-                to="about"
+                to="portfolio"
                 spy={spy}
                 smooth={smooth}
                 offset={offset}
@@ -85,7 +93,7 @@ const Header = () => {
                 Портфолио
               </Link>
             </li>
-             <li className={currentMenuItemClass}>
+            <li className={currentMenuItemClass}>
               <Link
                 className={styles.header__nav__list__item__link}
                 to="about"
